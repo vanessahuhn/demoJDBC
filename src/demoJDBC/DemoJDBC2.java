@@ -1,5 +1,9 @@
 package demoJDBC;
 
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+
+import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
 
 public class DemoJDBC2 {
@@ -13,10 +17,10 @@ public class DemoJDBC2 {
 		String user = "root";
 		String pwd = "Password29";
 		
-		Connection cn = DriverManager.getConnection(url,  user,  pwd);
+		Connection cn = (Connection) DriverManager.getConnection(url,  user,  pwd);
 		
 		//etape 3 : creation d'un statement
-		Statement st = cn.createStatement();
+		Statement st = (Statement) cn.createStatement();
 		
 		//etape 4 : definir notre requete
 		String sql = "SELECT * FROM formation.clients";
