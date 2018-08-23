@@ -6,3 +6,4 @@ SELECT titre
 FROM film
 -- où la longueur est supérieure à 180 minutes
 WHERE longueur > 180;
+
