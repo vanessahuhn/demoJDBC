@@ -4,6 +4,7 @@
 SELECT genre
 -- de la table film
 FROM film
--- regroupées par genre (s'il y a plusieurs genres identique, une seule occurrence sera affichée)
+/* regroupées par genre (s'il y a plusieurs genres identiques,
+une seule occurrence sera affichée)*/
 GROUP BY genre;
 
